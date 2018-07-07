@@ -1,9 +1,8 @@
 ---
 layout: post
 title: ML (GDG)
-date: 2017-09-12 00:00:00 +0300
+date: 2018-07-07 17:42:00 +0900
 description: Summarize process of Google's Machine Learning program.
-img: software.jpg
 tags: [Productivity, Software] # add tag
 ---
 ## 머신러닝을 학습하면 더 잘할 수 있는 것 
