@@ -28,10 +28,14 @@ analytics: # Google Analytics
 markdown: kramdown
 plugins:
   - jekyll-sitemap
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jemoji
 
-paginate: 8
-paginate_path: "/page/:num"
+pagination:
+  enabled: true
+  per_page: 15
+  permalink: '/page/:num/'
+  sort_reverse: true
+
 
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]

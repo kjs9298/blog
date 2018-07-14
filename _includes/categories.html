@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" id="navbar-row">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle cursor" onclick="clickDropdown(this)"
+                   role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Web
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="web-dropdown">
+                    <a class="dropdown-item" href="{{ "/web/backend" | prepend: site.baseurl }}">Backend</a>
+                    <a class="dropdown-item" href="{{ "/web/frontend" | prepend: site.baseurl }}">Frontend</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="{{ "/web/etc" | prepend: site.baseurl }}">ETC</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/blog/machine-learning">Machine Learning</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">비활성화 테스트</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<script>
+    function clickDropdown() { // TODO : Refactoring, It have to be recycling to other elements.
+        var x = document.getElementById("web-dropdown");
+
+        if (x.style.display !== "block") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+
+    }
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+        console.log("hihi");
+        /*var navbarRow = document.getElementById("navbar-row");
+        var items = navbarRow.getElementsByClassName("nav-item");
+
+        for (var i = 0; i < items.length; i++) {
+            console.log("item" + i, items[i]);
+
+
+
+            items[i].addEventListener("click", function() {
+                console.log("냠냠");
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+
+            });
+        }
+*/
+    });
+
+
+
+</script>
