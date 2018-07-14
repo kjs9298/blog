@@ -3,7 +3,7 @@ layout: post
 title: ML (GDG)
 date: 2018-07-07 17:42:00 +0900
 description: Summarize process of Google's Machine Learning program.
-tags: [Productivity, Software] # add tag
+categories: [machine-learning]
 ---
 ## 머신러닝을 학습하면 더 잘할 수 있는 것 
 1. 프로그래밍 시간을 줄일 수 있는 도구를 얻을 수 있다.
