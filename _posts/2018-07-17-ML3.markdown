@@ -6,6 +6,7 @@ description: Summarize process of Google's Machine Learning program.
 categories: [machine-learning]
 ---
 
+### [https://developers.google.com/machine-learning/crash-course/ml-intro](https://developers.google.com/machine-learning/crash-course/ml-intro)
 
 | housingMedianAge | totalRooms | totalBedrooms | medianHouseValue |
 | --- | --- | --- | --- |
@@ -53,3 +54,32 @@ $$y' = b + w_1x_1 + w_2x_2 + w_3x_3$$
 * training
   * weights, bias
   * empirical risk minimization
+
+* L2 loss
+```
+ = the square of the difference between the label and the prediction
+ = (observation - prediction(x))2
+ = (y - y')2
+```  
+
+* MSE (Mean square error)
+$$MSE = \frac{1}{N} \sum_{(x,y)\in D} (y - prediction(x))^2$$
+  * D = 데이터셋
+  * N = example 의 수
+  
+![Example of MSE](/blog/assets/img/example_mse.png)
+
+----
+
+### An Iterative Approach
+![flow chart of linear regression](/blog/assets/img/flow_chart.png)
+
+$$y' = b + w_1x_1$$
+
+* 언제까지?
+* 매개변수 업데이트 계산?
+
+![Graph](/blog/assets/img/graph.png)
+
+* learning rate
+
