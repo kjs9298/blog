@@ -23,7 +23,7 @@ categories: [machine-learning]
 * Example
 
 * Model
-  * learning : (x, y)
+  * training : (x, y)
   * inference : (x, ?)
 
 * Regression vs Classification
@@ -48,4 +48,8 @@ $$y' = b + w_1x_1 + w_2x_2 + w_3x_3$$
 
 ----
 
-![Prediction and loss](../assets/img/prediction_and_loss.png)
+![Prediction and loss](/blog/assets/img/prediction_and_loss.png)
+
+* training
+  * weights, bias
+  * empirical risk minimization
