@@ -14,7 +14,7 @@ categories: [machine-learning]
 ## 머신러닝은?
 * 입력값들을 가지고 새로운 일을 예측하는 것.
 
-## 라벨, 특성, 모델
+## Label, Feature, Model
 ```
 - labeled example : (x, y)
 - unlabeled example : (x, ?)
@@ -25,3 +25,5 @@ categories: [machine-learning]
 * 예시들을 보고 모델이 관계를 점차 학습해가는 것이다.
 
 -> 좋은 특성과 좋은 라벨은 객관적인 수량으로 표현할 수 있는 것이다.  
+
+## Regression, Classification

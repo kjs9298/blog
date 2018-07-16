@@ -1,0 +1,34 @@
+---
+layout: post
+title: ML (GDG)
+date: 2018-07-17 05:40:00 +0900
+description: Summarize process of Google's Machine Learning program.
+categories: [machine-learning]
+---
+| housingMedianAge | totalRooms | totalBedrooms | medianHouseValue |
+| --- | --- | --- | --- |
+|15|	5612	|1283|	66900|
+|19|	7650|	1901|	80100|
+|17|	720|	174|	85700|
+|14|	1501|	337|	73400|
+|20|	1454|	326|	?|
+
+### Label
+
+### Feature
+
+### Example
+
+### Model
+* learning : (x, y)
+* inference : (x, ?)
+
+### Regression vs Classification
+
+### Label, Feature 로 정의하기 유용한 데이터는?
+* 신발의 아름다움
+* 사용자가 좋아하는 신발
+* 신발의 크기
+* 사용자의 신발 설명 클릭수
+
+$$y' = b + w_1x_1$$
