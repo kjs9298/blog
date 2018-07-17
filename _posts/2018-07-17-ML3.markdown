@@ -82,4 +82,13 @@ $$y' = b + w_1x_1$$
 ![Graph](/blog/assets/img/graph.png)
 
 * learning rate
+  * hyperparameter (vs parameter)
+  * ? * ? 만큼 움직움직
+  * Optimizing learning rate : 골디락스와 곰세마리...
+  * 매우 오랜 시간이 걸릴거잖 해결법은?
+
+### 일반화
+
+
+  
 
