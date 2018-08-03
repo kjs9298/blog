@@ -73,7 +73,7 @@ categories: [etc]
 
 ``` html
 <div class="category-box">
-  {% include categories.html %}
+  \{% include categories.html \%}
 </div>
 <div class="content-box clearfix">
   {{ content }}
@@ -117,11 +117,11 @@ categories: [etc]
 * index.html
 
 ``` text
----
+\---
 layout: main
----
+\---
 
-{% include list.html posts=site.categories.machine-learning %}
+\{% include list.html posts=site.categories.machine-learning \%}
 
 ```
 * 아까 공통으로 정히해주었던 list.html을 포함만 시켜주면 됨
