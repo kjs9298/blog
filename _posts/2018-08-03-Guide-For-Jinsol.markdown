@@ -85,6 +85,7 @@ categories: [etc]
 ### 2. 카테고리를 클릭 한 후 카테고리에 속한 글 목록 만들기
 
 * _include 밑에 **list.html** 생성
+
 ``` html
 {% for post in include.posts %}
 <article class="post">
