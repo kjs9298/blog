@@ -14,7 +14,7 @@ categories: [etc]
 
 ### 1. 카테고리 만들기
 
-![카테고리 부분](../assets/img/guide_0.png)
+![카테고리 부분](/blog/assets/img/guide_0.png)
 
 1) _includes 밑에 **categories.html** 생성
 ``` html
@@ -112,11 +112,11 @@ categories: [etc]
 
 * 본인이 URL 규칙을 어떻게 하냐에 따라 다른데 나는 다음과 같이 함
 * leaf 에만 글을 보관하려고 leaf 디렉토리에만 index.html을 각각 달아주었음
-![index 디렉토리](../assets/img/guide_3.png)
+![index 디렉토리](/blog/assets/img/guide_3.png)
 
 * index.html
 
-``` html
+``` text
 ---
 layout: main
 ---
