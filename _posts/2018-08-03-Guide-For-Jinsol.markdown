@@ -72,7 +72,6 @@ categories: [etc]
 * /_layout/main.html 에서 content 위에다가 이렇게 붙여주셈
 
 ``` html
-...
 <div class="category-box">
   {% include categories.html %}
 </div>
@@ -84,8 +83,6 @@ categories: [etc]
 
 
 ### 2. 카테고리를 클릭 한 후 카테고리에 속한 글 목록 만들기
-
-![카테고리별 글 목록](../assets/img/guide_2.png)
 
 * _include 밑에 **list.html** 생성
 ``` html
