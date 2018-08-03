@@ -1,8 +1,9 @@
 ---
 layout: post
-title: GDG 1주차
+title: GDG 2주차
 date: 2018-07-24 16:17:00 +0900
 description: Summarize process of Google's Machine Learning program.
+img: machine-learning.png
 categories: [machine-learning]
 ---
 
