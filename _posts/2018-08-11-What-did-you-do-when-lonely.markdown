@@ -3,7 +3,7 @@ layout: post
 title: What do you do when you feel lonely?
 date: 2018-08-11 23:12:00 +0900
 description: Just write my thought. 
-img: town.jpg
+img: lonely.jpg
 categories: [english]
 ---
 
