@@ -1,0 +1,95 @@
+---
+layout: post
+title: GDG 1주차 - 밸표
+date: 2018-07-17 05:40:00 +0900
+description: Summarize process of Google's Machine Learning program.
+img: machine-learning.png
+categories: [machine-learning]
+---
+
+### [https://developers.google.com/machine-learning/crash-course/ml-intro](https://developers.google.com/machine-learning/crash-course/ml-intro)
+
+| housingMedianAge | totalRooms | totalBedrooms | medianHouseValue |
+| --- | --- | --- | --- |
+|15|	5612	|1283|	66900|
+|19|	7650|	1901|	80100|
+|17|	720|	174|	85700|
+|14|	1501|	337|	73400|
+|20|	1454|	326|	?|
+
+
+* Label
+
+* Feature
+
+* Example
+
+* Model
+  * training : (x, y)
+  * inference : (x, ?)
+
+* Regression vs Classification
+
+* Label, Feature 로 정의하기 유용한 데이터는?
+  * 신발의 아름다움
+  * 사용자가 좋아하는 신발
+  * 신발의 크기
+  * 사용자의 신발 설명 클릭수
+
+----
+$$y' = b + w_1x_1$$
+$$y' = b + w_1x_1 + w_2x_2 + w_3x_3$$
+
+* Label
+
+* Feature
+
+* Bias
+
+* Weight
+
+----
+
+![Prediction and loss](/blog/assets/img/prediction_and_loss.png)
+
+* training
+  * weights, bias
+  * empirical risk minimization
+
+* L2 loss
+```
+ = the square of the difference between the label and the prediction
+ = (observation - prediction(x))2
+ = (y - y')2
+```  
+
+* MSE (Mean square error)
+$$MSE = \frac{1}{N} \sum_{(x,y)\in D} (y - prediction(x))^2$$
+  * D = 데이터셋
+  * N = example 의 수
+  
+![Example of MSE](/blog/assets/img/example_mse.png)
+
+----
+
+### An Iterative Approach
+![flow chart of linear regression](/blog/assets/img/flow_chart.png)
+
+$$y' = b + w_1x_1$$
+
+* 언제까지?
+* 매개변수 업데이트 계산?
+
+![Graph](/blog/assets/img/graph.png)
+
+* learning rate
+  * hyperparameter (vs parameter)
+  * ? * ? 만큼 움직움직
+  * Optimizing learning rate : 골디락스와 곰세마리...
+  * 매우 오랜 시간이 걸릴거잖 해결법은?
+
+### 일반화
+
+
+  
+

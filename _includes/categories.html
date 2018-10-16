@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" id="navbar-row">
+            <li class="nav-item {% if page.url == '/' %} active {% endif %}">
+                <a class="nav-link" href="{{ site.baseurl }}/">ALL</a>
+            </li>
+            <li class="nav-item dropdown
+            {% if page.url == '/web/backend/' or page.url == '/web/frontend/' or page.url == '/web/etc/'%} active {% endif %}">
+                <a class="nav-link dropdown-toggle cursor" onclick="clickDropdown('web-dropdown')"
+                   role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Web
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="web-dropdown">
+                    <a class="dropdown-item" href="{{ "/web/backend" | prepend: site.baseurl }}">Backend</a>
+                    <a class="dropdown-item" href="{{ "/web/frontend" | prepend: site.baseurl }}">Frontend</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="{{ "/web/etc" | prepend: site.baseurl }}">ETC</a>
+                </div>
+            </li>
+            <li class="nav-item {% if page.url == '/machine-learning/' %} active {% endif %}">
+                <a class="nav-link" href="{{ "/machine-learning" | prepend: site.baseurl }}">Machine Learning</a>
+            </li>
+            <li class="nav-item {% if page.url == '/english/' %} active {% endif %}">
+                <a class="nav-link" href="{{ "/english" | prepend: site.baseurl }}">English</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<script>
+    function clickDropdown(dropdown_id) { // TODO : Refactoring, It have to be recycling to other elements.
+        var x = document.getElementById(dropdown_id);
+
+        if (x.style.display !== "block") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+</script>

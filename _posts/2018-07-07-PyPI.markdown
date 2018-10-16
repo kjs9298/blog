@@ -1,0 +1,10 @@
+---
+layout: post
+title: PyPI, pip
+date: 2018-07-07 10:57:00 +0900
+description: PyPI와 pip가 무엇인지
+img: pypi.png
+categories: [machine-learning]
+---
+## Python Package Index(PyPI)
+* PyPI는 기본적인 저장소입니다. 파이썬 개발자들에게 사용하고, 배포하기 위해 열려 있습니다. 

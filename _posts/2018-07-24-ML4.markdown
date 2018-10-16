@@ -1,0 +1,71 @@
+---
+layout: post
+title: GDG 2주차
+date: 2018-07-24 16:17:00 +0900
+description: Summarize process of Google's Machine Learning program.
+img: machine-learning.png
+categories: [machine-learning]
+---
+
+## Training set and Test set
+* 테스트 세트는 어떻게 해야 함?
+  * 의미 있는 결과가 될 수 있도록 겁나 커야함.
+  * 트레이닝 세트와 같은 특성을 가져야함. 어떻게 해야 이럴 수 있을까?
+  
+* 트레이닝 세트로 학습을 하고 테스트 세트로 평가를 함.
+* 이 때 주의해야할 점은 테스트 세트로 학습을 하지 말라는 것임.
+* 테스트 세트로 돌렸는데 정확성이 트레이닝 세트랑 비슷하다면 의심해보셈.. 테스트 세트로 학습을 하진 않았는지...
+* learning rate 가 3이여도 트레이닝 로스가 큰데..? (다를 수 있구나)
+* learning rate 을 늘렸다가 줄여도 델타가 변화가 없는데..?
+  * 대부분의 실행에서는 배치 크기를 늘려도 학습 손실 또는 테스트 손실에 유의미한 영향이 없다. 
+  * 그러나 실행 중 소수에서는 배치 크기를 20 이상으로 늘릴 때 테스트 손실이 학습 손실보다 약간 낮은 값으로 하락한다.
+
+## Validation
+* 위 방법으로 테스트를 돌리게 되면 은연중에 자주 테스트하는 속성이 반영되게 됨.
+  * 동일한 테스트 셋으로 계속 돌린다는 말인가?
+  * 흠 이 자체가 데이트 셋을 하나만 두고 거기서 테스트 셋, 트레이닝 셋 퍼센트만 다르게 해서 계속 돌리는 모양임
+* training set -> test set
+  * 마지막에 가장 우수한 모델을 뽑는데 이걸로 뭐함?
+* training set -> validation set -> test set
+  * validation 에서 우수한 모델만 뽑아서 test를 하는 것임.
+  * 위 문제점을 완전히 해결하는 것은 아니고 마모되는 횟수, 시간을 매우 줄이는 것임
+  * 마모된다는 말은 같은 데이터를 많이 쓸수록 일반화 가능성이 낮잖. 그것을 말하는 것임.
+
+## Representation
+* 님이 하는 것, 코드에 중점을 머러에서는 feature 에 중점을 둠
+* 비정제 데이터를 가지고 feature vector 을 뽑아내는 게 feature engineering 이라고 함.
+* feature engineering 작업 시간 개걸림.
+* 실수값은 걍 쓰면 됨.
+* 문자열은 정의를 함. 
+  * one-hot encoding
+  * 요소 중 하나가 1로 설정, 그 외에는 0으로 설정하는 것
+  * 사용자가 정의하나? 어디에 정의하는 함수를 넣나
+
+## Good Features
+1. 데이터 셋에서 유니크하게 나타난 것은 좋은 feature 겠음? 뭘 예측할 수가 없잖
+2. 알아볼 수 있는 명확한 값
+3. 특수 값이 없어야 함스
+
+## Representation: Cleaning data
+* scaling : feature 값을 -1 ~ +1 등으로 변경하는 것을 말함.
+* feature 가 한 개일 경우는 머 그닥그닥이지만 여러 개일 경우 이점이 있음.
+* 꼭 feature 끼리 동일한 주간으로 표현 안해도 됨.
+* scaling 을 해보았는데 요상하게 튀는 값이 있다면?
+* 로그 -> 값 자르기
+* Binning
+  * bin(bucket) : 쪼개는 단위 = bucketing
+  * bin 으로 쪼개서 포함된 곳을 키셈
+* Scrubbing
+  * 잘못된 예, 잘못된 데이터가 있을 수 있음.
+  * 신뢰를 못함스키
+  * 이러한 데이터는 삭제하여 예를 수정하거나, 데이터를 수정할 수 있음
+  * 요놈 탐지하기 위해 여러가지 통계 자료가 사용됨.
+* 좋은 데이터가 좋은 결과를 만듬
+  * 정상적인 동작은 무엇인지
+  * 다르면 왜 다른지
+  * 다른 소스랑 동일한지 항상 고려해야 함.
+ 
+## Nonlinearity Encoding
+* Feature cross
+$$y = b + w_1x_1 + w_2x_2 + w_3x_3$$
+
